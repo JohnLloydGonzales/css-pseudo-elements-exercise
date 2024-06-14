@@ -1,0 +1,97 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cce7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-header {
+    font-size: 2.5em;
+    color: #0d47a1;
+    margin: 20px 0;
+    position: relative;
+    font-weight: bold;
+    padding: 0 60px;
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #1976d2;
+    margin: 20px 0;
+    position: relative;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #0288d1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.main-header::before,
+.main-header::after {
+    content: '★';
+    color: #03a9f4;
+    font-size: 1.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-header::before {
+    left: -40px;
+}
+
+.main-header::after {
+    right: -40px;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    color: #64b5f6;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+}
+
+.intro-paragraph::before {
+    left: -20px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: -20px;
+}
+
+.cta-button::before,
+.cta-button::after {
+    content: '👉';
+    color: #b3e5fc;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-button::before {
+    left: -25px;
+}
+
+.cta-button::after {
+    right: -25px;
+}
